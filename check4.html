@@ -102,39 +102,39 @@
     <h3 class="mt-5 mb-2 ml-4 mr-4" style="font-size: 45px; color: #00596b;">Describe your whole self:</h3>
     <p class="mb-4 ml-4 mr-4" style="font-size: 24px; color: #00596b;">(Choose up to 3 words)</p>
     
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice1">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check1"></span></div>
         <div class="col-9 js-unchecked" id="js-body1"><strong>Guarded</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice2">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check2"></span></div>
         <div class="col-9 js-unchecked" id="js-body2"><strong>Trouble sleeping</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice3">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check3"></span></div>
         <div class="col-9 js-unchecked" id="js-body3"><strong>Trouble concentrating</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice4">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check4"></span></div>
         <div class="col-9 js-unchecked" id="js-body4"><strong>Easily startled</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice5">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check5"></span></div>
         <div class="col-9 js-unchecked" id="js-body5"><strong>Irritated</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice6">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check6"></span></div>
         <div class="col-9 js-unchecked" id="js-body6"><strong>Angry</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice7">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check7"></span></div>
         <div class="col-9 js-unchecked" id="js-body7"><strong>Guilty</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice9">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check9"></span></div>
         <div class="col-9 js-unchecked" id="js-body9"><strong>Distressed</strong></div>
     </div>
-    <div class="row ml-3 mr-3 mb-1">
+    <div class="row ml-3 mr-3 mb-1 js-choice10">
         <div class="col-3 text-right"><span class="fas fa-circle fa-2x" style="color: #dff1ef;" id="js-check10"></span></div>
         <div class="col-9 js-unchecked" id="js-body10"><strong>Appathetic</strong></div>
     </div>
@@ -174,68 +174,68 @@
             }
         });
         
-        $('#js-body1').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice1').click(function() {            
+            if ($('#js-body1').hasClass('js-unchecked')) {
                 $('#js-check1').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body1').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body2').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice2').click(function() {            
+            if ($('#js-body2').hasClass('js-unchecked')) {
                 $('#js-check2').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body2').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body3').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice3').click(function() {            
+            if ($('#js-body3').hasClass('js-unchecked')) {
                 $('#js-check3').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body3').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body4').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice4').click(function() {            
+            if ($('#js-body4').hasClass('js-unchecked')) {
                 $('#js-check4').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body4').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body5').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice5').click(function() {            
+            if ($('#js-body5').hasClass('js-unchecked')) {
                 $('#js-check5').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body5').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body6').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice6').click(function() {            
+            if ($('#js-body6').hasClass('js-unchecked')) {
                 $('#js-check6').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body6').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body7').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice7').click(function() {            
+            if ($('#js-body7').hasClass('js-unchecked')) {
                 $('#js-check7').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body7').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body8').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice8').click(function() {            
+            if ($('#js-body8').hasClass('js-unchecked')) {
                 $('#js-check8').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body8').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body9').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice9').click(function() {            
+            if ($('#js-body9').hasClass('js-unchecked')) {
                 $('#js-check9').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body9').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body10').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice10').click(function() {            
+            if ($('#js-body10').hasClass('js-unchecked')) {
                 $('#js-check10').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body10').removeClass('js-unchecked').addClass('js-checked');
             }
         });
-        $('#js-body11').click(function() {            
-            if ($(this).hasClass('js-unchecked')) {
+        $('.js-choice11').click(function() {            
+            if ($('#js-body11').hasClass('js-unchecked')) {
                 $('#js-check11').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body11').removeClass('js-unchecked').addClass('js-checked');
             }
