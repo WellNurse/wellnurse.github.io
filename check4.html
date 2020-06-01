@@ -238,6 +238,9 @@
             if ($('#js-body11').hasClass('js-unchecked')) {
                 $('#js-check11').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body11').removeClass('js-unchecked').addClass('js-checked');
+            } else {
+                $('#js-check11').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body11').removeClass('js-checked').addClass('js-unchecked');
             }
         });
         
