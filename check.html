@@ -101,20 +101,20 @@
     <h2 class="p-3" style="background-color: #00596b; color: #fff; font-size: 18px;">Step 1 of 3</h2>
     <h3 class="m-5" style="font-size: 48px; color: #00596b;">How is your body?</h3>
     <div class="row m-3">
-        <div class="col-4 text-center js-unchecked" id="js-body1">
+        <div class="col-4 text-center js-unchecked js-choice1" id="js-body1">
             <img src="img/Body1.jpg" alt="Not well" class="w-100">
         </div>
-        <div class="col-4 text-center js-unchecked" id="js-body2">
+        <div class="col-4 text-center js-unchecked js-choice2" id="js-body2">
             <img src="img/Body2.jpg" alt="Fine" class="w-100">
         </div>
-        <div class="col-4 text-center js-unchecked" id="js-body3">
+        <div class="col-4 text-center js-unchecked js-choice3" id="js-body3">
             <img src="img/Body3.jpg" alt="Great" class="w-100">
         </div>
     </div>
     <div class="row m-3">
-        <div class="col-4 text-center"><span class="fas fa-circle fa-5x" style="color: #dff1ef;" id="js-check1"></span></div>
-        <div class="col-4 text-center"><span class="fas fa-circle fa-5x" style="color: #dff1ef;" id="js-check2"></span></div>
-        <div class="col-4 text-center"><span class="fas fa-circle fa-5x" style="color: #dff1ef;" id="js-check3"></span></div>
+        <div class="col-4 text-center"><span class="fas fa-circle fa-5x js-choice1" style="color: #dff1ef;" id="js-check1"></span></div>
+        <div class="col-4 text-center"><span class="fas fa-circle fa-5x js-choice2" style="color: #dff1ef;" id="js-check2"></span></div>
+        <div class="col-4 text-center"><span class="fas fa-circle fa-5x js-choice3" style="color: #dff1ef;" id="js-check3"></span></div>
     </div>
     
     <div class="text-right mr-3 mt-4">
@@ -152,7 +152,7 @@
             }
         });
         
-        $('#js-body1').click(function() {            
+        $('.js-choice1').click(function() {            
             if ($(this).hasClass('js-unchecked')) {
                 $('#js-check1').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body1').removeClass('js-unchecked').addClass('js-checked');
@@ -168,7 +168,7 @@
 
             }
         });
-        $('#js-body2').click(function() {            
+        $('.js-choice2').click(function() {            
             if ($(this).hasClass('js-unchecked')) {
                 $('#js-check2').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body2').removeClass('js-unchecked').addClass('js-checked');
@@ -184,7 +184,7 @@
                 $('#js-body2').removeClass('js-checked').addClass('js-unchecked');
             }
         });
-        $('#js-body3').click(function() {            
+        $('js-choice3').click(function() {            
             if ($(this).hasClass('js-unchecked')) {
                 $('#js-check3').removeClass('fa-circle').addClass('fa-check-circle text-success');
                 $('#js-body3').removeClass('js-unchecked').addClass('js-checked');
